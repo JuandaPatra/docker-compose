@@ -1,0 +1,9 @@
+services:
+  php:
+    build: .
+    image: php-7.4-apache
+    container_name: php-7.4
+    volumes:
+      - /Users/nur/Sites:/var/www/html
+    ports:
+      - 74:80

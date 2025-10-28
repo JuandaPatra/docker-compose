@@ -1,0 +1,9 @@
+services:
+  php:
+    build: .
+    image: php-5.6-apache
+    container_name: php-5.6
+    volumes:
+      - /Users/nur/Sites:/var/www/html
+    ports:
+      - 56:80

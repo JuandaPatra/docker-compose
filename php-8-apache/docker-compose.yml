@@ -1,0 +1,11 @@
+
+services:
+  php:
+    build: .
+    image: php:8.2-apache
+    container_name: php-8.2-apache
+    volumes:
+      - C:/xampp/htdocs:/var/www/html
+    ports:
+      - "77:80"
+    restart: always

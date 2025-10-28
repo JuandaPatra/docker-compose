@@ -1,0 +1,9 @@
+services:
+  php:
+    build: .
+    image: php-7.2-apache
+    container_name: php-7.2
+    volumes:
+      - C:/xampp/htdocs:/var/www/html
+    ports:
+      - 72:80
